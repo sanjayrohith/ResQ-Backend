@@ -1,0 +1,14 @@
+[
+  {
+    "unit_id": "Ambulance A12",
+    "distance_km": 2.3,
+    "eta_minutes": 6,
+    "status": "AVAILABLE"
+  },
+  {
+    "unit_id": "Rescue Boat B7",
+    "distance_km": 4.1,
+    "eta_minutes": 10,
+    "status": "BUSY"
+  }
+]
