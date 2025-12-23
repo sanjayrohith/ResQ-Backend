@@ -20,7 +20,6 @@ ResQ-Connect is a FastAPI-based backend that serves as the decision engine for e
 
 ---
 
-## System Architecture
 
 ## System Architecture
 
