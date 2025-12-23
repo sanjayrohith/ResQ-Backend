@@ -29,5 +29,6 @@ async def process_call(input_data: TranscriptInput):
         location=incident.analysis.location,
         reasoning=incident.analysis.reasoning,
         confidence_score=incident.analysis.confidence_score,
-        suggested_unit=incident.suggested_unit
+        suggested_unit=incident.suggested_unit,
+        keywords=incident.analysis.keywords # <--- ADD THIS LINE
     )

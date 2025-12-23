@@ -26,3 +26,4 @@ class FrontendResponse(BaseModel):
     reasoning: str
     confidence_score: float
     suggested_unit: Optional[str]
+    keywords: List[str] = []
