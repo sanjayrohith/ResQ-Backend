@@ -1,7 +1,7 @@
 import json
 import boto3
+import re
 from app.schemas import AIAnalysis
-
 
 # =========================================================
 # Bedrock Client
@@ -11,52 +11,48 @@ bedrock = boto3.client(
     region_name="us-east-1"
 )
 
-
 # =========================================================
-# Prompt Builder
+# Prompt Builder (THE FIX)
 # =========================================================
 def build_prompt(text: str) -> str:
-    return f"""
-You are an emergency response classifier.
+    # We give it an example so it knows EXACTLY what to do.
+    return f"""User: You are a strict API Backend. You convert emergency transcripts into raw JSON.
+    
+    RULES:
+    1. Output ONLY valid JSON.
+    2. Do NOT add explanations or conversational text.
+    3. Do NOT use Markdown formatting (no ```json blocks).
+    
+    EXAMPLE INPUT:
+    "Help, there is a big fire at the central station!"
+    
+    EXAMPLE JSON OUTPUT:
+    {{
+      "emergency_type": "Fire",
+      "severity": "Critical",
+      "location": "Central Station",
+      "keywords": ["fire", "central station"],
+      "reasoning": "User explicitly stated a big fire at a public hub.",
+      "confidence_score": 0.98
+    }}
 
-STRICT RULES:
-- Output ONLY valid JSON
-- Do NOT include explanations
-- Do NOT include markdown
-- Do NOT include extra text
-
-JSON SCHEMA:
-{{
-  "emergency_type": "Fire | Flood | Medical | Evacuation",
-  "severity": "Critical | High | Standard",
-  "location": "<short location>",
-  "keywords": ["<keyword1>", "<keyword2>"],
-  "reasoning": "<one sentence>",
-  "confidence_score": <number between 0 and 1>
-}}
-
-TRANSCRIPT:
-{text}
-"""
-
+    REAL INPUT:
+    "{text}"
+    
+    REAL JSON OUTPUT:"""
 
 # =========================================================
-# Fallback (ONLY used if Bedrock fails)
+# Fallback
 # =========================================================
-def fallback_response(text: str) -> AIAnalysis:
-    # You can make this smarter later if needed
+def fallback_response(text: str, error_msg: str = "") -> AIAnalysis:
     return AIAnalysis(
-        emergency_type="Fire",
-        severity="Critical",
-        location="Phoenix Marketcity, Velachery, Chennai",
-        keywords=["smoke", "fire", "trapped"],
-        reasoning=(
-            "Fallback analysis: reported fire incident at a public location "
-            "with potential people trapped."
-        ),
-        confidence_score=0.85
+        emergency_type="Unclassified",
+        severity="Normal",
+        location="Signal Processing Error",
+        keywords=["error"],
+        reasoning=f"AI Error: {error_msg}",
+        confidence_score=0.0
     )
-
 
 # =========================================================
 # Main AI Entry Point
@@ -67,16 +63,14 @@ def analyze_transcript(text: str) -> AIAnalysis:
     body = {
         "inputText": prompt,
         "textGenerationConfig": {
-            "maxTokenCount": 300,
-            "temperature": 0,
-            "topP": 1
+            "maxTokenCount": 512,
+            "temperature": 0, # Strict mode
+            "topP": 1,
+            "stopSequences": ["User:"]
         }
     }
 
     try:
-        # -----------------------------
-        # Try Bedrock FIRST
-        # -----------------------------
         response = bedrock.invoke_model(
             modelId="amazon.titan-text-express-v1",
             body=json.dumps(body)
@@ -84,26 +78,47 @@ def analyze_transcript(text: str) -> AIAnalysis:
 
         raw = response["body"].read().decode("utf-8")
         data = json.loads(raw)
-
         output_text = data["results"][0]["outputText"].strip()
-        parsed = json.loads(output_text)
+        
+        print(f"🤖 Raw AI Output: {output_text}") 
 
-        # -----------------------------
-        # Normalize fields
-        # -----------------------------
-        parsed["emergency_type"] = parsed["emergency_type"].title()
+        # 1. Regex Extraction (Find the JSON block)
+        # This grabs everything between the first { and the last }
+        json_match = re.search(r'\{.*\}', output_text, re.DOTALL)
+        
+        if json_match:
+            clean_json = json_match.group(0)
+        else:
+            # Fallback: If AI forgot the braces, try to wrap it
+            clean_json = "{" + output_text if not output_text.startswith("{") else output_text
+        
+        parsed = json.loads(clean_json)
 
-        # Ensure keywords is always a list
-        if isinstance(parsed.get("keywords"), str):
-            parsed["keywords"] = [parsed["keywords"]]
-        elif parsed.get("keywords") is None:
-            parsed["keywords"] = []
+        # 2. Normalization (Handle weird AI formatting)
+        # If it wrapped it in a list or "rows", unwrap it
+        if "rows" in parsed and isinstance(parsed["rows"], list):
+            parsed = parsed["rows"][0]
+        elif isinstance(parsed, list):
+            parsed = parsed[0]
 
-        return AIAnalysis(**parsed)
+        # 3. Clean Keys (Convert "Emergency Type" -> "emergency_type")
+        normalized = {}
+        for key, value in parsed.items():
+            new_key = key.lower().replace(" ", "_")
+            normalized[new_key] = value
+
+        # 4. Final Data Polish
+        normalized["emergency_type"] = normalized.get("emergency_type", "Unclassified").title()
+        
+        if "keywords" in normalized and isinstance(normalized["keywords"], str):
+             normalized["keywords"] = [k.strip() for k in normalized["keywords"].split(',')]
+        
+        if "confidence_score" in normalized:
+            normalized["confidence_score"] = float(normalized["confidence_score"])
+
+        return AIAnalysis(**normalized)
 
     except Exception as e:
-        # -----------------------------
-        # Bedrock FAILED → fallback
-        # -----------------------------
-        print("🔥 Bedrock failed, using fallback:", e)
-        return fallback_response(text)
+        print(f"🔥 Bedrock Error: {str(e)}")
+        # If it fails, return the Safe Fallback so the Frontend doesn't crash
+        return fallback_response(text, str(e))
