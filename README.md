@@ -16,6 +16,7 @@ ResQ-Connect is a FastAPI-based backend that serves as the decision engine for e
 - Real-time incident classification (Fire, Flood, Medical)
 - Severity assessment with confidence scoring
 - Intelligent resource allocation based on unit availability and ETA
+- Automated Telegram notifications to registered volunteers
 - Demo-ready mock mode for presentations
 
 ---
@@ -52,7 +53,14 @@ Emergency Transcript
 │   • Capability matching          │
 └──────────────────────────────────┘
         ↓
-    Incident Response
+┌──────────────────────────────────┐
+│ Telegram Notifier                │  ← Alert system
+│ (telegram_notifier.py)           │
+│   • Volunteer notifications      │
+│   • Formatted alerts             │
+└──────────────────────────────────┘
+        ↓
+    Incident Response + Volunteer Alert
 ```
 
 **Component Breakdown**
@@ -64,6 +72,7 @@ Emergency Transcript
 | `orchestrator.py` | Business logic | Emergency classification, unit matching |
 | `resources.py` | Data layer | Unit queries, availability checks |
 | `schemas.py` | Data models | Pydantic validation, type safety |
+| `telegram_notifier.py` | Alert system | Volunteer notifications via Telegram Bot API |
 
 ---
 
@@ -86,7 +95,7 @@ python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install fastapi uvicorn boto3 pydantic
+pip install fastapi uvicorn boto3 pydantic requests
 ```
 
 ### Running Locally
@@ -209,6 +218,48 @@ Customize available emergency units in `data/units.json`:
 - `AVAILABLE` - Ready for dispatch
 - `BUSY` - Currently on assignment
 
+### Telegram Notifications
+
+The system automatically sends real-time alerts to registered volunteers via Telegram when incidents are dispatched.
+
+**Configuration:** `app/telegram_notifier.py`
+
+```python
+BOT_TOKEN = "your-telegram-bot-token"
+VOLUNTEER_CHAT_ID = "volunteer-chat-id"
+```
+
+**Setting Up Telegram Notifications:**
+
+1. Create a Telegram bot via [@BotFather](https://t.me/botfather)
+2. Get your bot token
+3. Get your chat ID by messaging [@userinfobot](https://t.me/userinfobot)
+4. Update `BOT_TOKEN` and `VOLUNTEER_CHAT_ID` in `telegram_notifier.py`
+
+**Alert Format:**
+
+```
+🚨 NEW EMERGENCY ALERT
+
+🔥 Type: Fire
+⚠️ Severity: Critical
+📍 Location: Phoenix Marketcity, Velachery, Chennai
+
+🧠 Reasoning:
+Caller reported thick black smoke visible from the food court area.
+
+🚑 Suggested Unit:
+Fire Engine FE12 (4 mins ETA)
+
+— ResQ Dispatch System
+```
+
+**Features:**
+- Non-blocking notifications (API never fails due to Telegram issues)
+- Markdown formatting for better readability
+- Includes all critical incident details
+- Instant delivery to volunteers
+
 ---
 
 ## Testing
@@ -236,13 +287,14 @@ Navigate to `http://localhost:8000/docs` for Swagger UI with:
 ```
 resq-backend/
 ├── app/
-│   ├── main.py           # FastAPI application and routes
-│   ├── ai_engine.py      # AWS Bedrock integration and AI logic
-│   ├── orchestrator.py   # Decision engine and unit matching
-│   ├── resources.py      # Resource management and data access
-│   └── schemas.py        # Pydantic models and validation
+│   ├── main.py              # FastAPI application and routes
+│   ├── ai_engine.py         # AWS Bedrock integration and AI logic
+│   ├── orchestrator.py      # Decision engine and unit matching
+│   ├── resources.py         # Resource management and data access
+│   ├── schemas.py           # Pydantic models and validation
+│   └── telegram_notifier.py # Telegram bot integration for alerts
 ├── data/
-│   └── units.json        # Emergency unit database
+│   └── units.json           # Emergency unit database
 └── README.md
 ```
 
@@ -302,6 +354,9 @@ pip freeze > requirements.txt
 - Set up CI/CD pipeline
 - Configure auto-scaling
 - Add health check endpoints
+- Support multiple Telegram channels for different emergency types
+- Implement volunteer acknowledgment system
+- Add SMS fallback for critical alerts
 
 ---
 
