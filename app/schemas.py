@@ -13,6 +13,7 @@ class AIAnalysis(BaseModel):
     reasoning: str
     confidence_score: float
 
+
 class IncidentResponse(BaseModel):
     
     incident_id: str = Field(default_factory=lambda: f"RESQ-{uuid.uuid4().hex[:4].upper()}")
