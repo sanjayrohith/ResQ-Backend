@@ -24,5 +24,5 @@ def orchestrate_decision(analysis: AIAnalysis) -> IncidentResponse:
     return IncidentResponse(
         analysis=analysis,
         suggested_unit=suggested,
-        status="Pending Confirmation"
+        
     )
