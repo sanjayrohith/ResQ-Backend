@@ -1,15 +1,13 @@
 from app.schemas import IncidentResponse, AIAnalysis
 from app.resources import get_available_units_by_capability
-from app.telegram_notifier import send_telegram_alert
 
 
 def orchestrate_decision(analysis: AIAnalysis) -> IncidentResponse:
     """
-    Orchestrates the final decision:
-    - Maps emergency type to capability
-    - Finds best available unit
-    - Sends Telegram alert to volunteer
-    - Returns response to frontend
+    Pure orchestration logic:
+    - Maps emergency type → capability
+    - Selects best available unit
+    - Returns IncidentResponse
     """
 
     # 1️⃣ Map emergency type → required capability
@@ -20,7 +18,7 @@ def orchestrate_decision(analysis: AIAnalysis) -> IncidentResponse:
     else:
         capability = "AMBULANCE"
 
-    # 2️⃣ Fetch available units for that capability
+    # 2️⃣ Fetch available units
     units = get_available_units_by_capability(capability)
 
     if not units:
@@ -29,17 +27,8 @@ def orchestrate_decision(analysis: AIAnalysis) -> IncidentResponse:
         best = min(units, key=lambda x: x["eta_minutes"])
         suggested = f"{best['unit_id']} ({best['eta_minutes']} mins ETA)"
 
-    # 3️⃣ Build incident response
-    incident = IncidentResponse(
+    # 3️⃣ Return internal response
+    return IncidentResponse(
         analysis=analysis,
         suggested_unit=suggested
     )
-
-    # 4️⃣ Send Telegram alert (SAFE: never breaks backend)
-    try:
-        send_telegram_alert(incident)
-    except Exception as e:
-        print("⚠️ Telegram alert failed:", e)
-
-    # 5️⃣ Return response to frontend
-    return incident

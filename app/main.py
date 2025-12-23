@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.telegram_notifier import send_telegram_alert
+
 
 from app.schemas import (
     TranscriptInput,
@@ -21,7 +23,13 @@ app.add_middleware(
 async def process_call(input_data: TranscriptInput):
     analysis = analyze_transcript(input_data.text)
     incident = orchestrate_decision(analysis)
+    try:
+        send_telegram_alert(incident)
+    except Exception as e:
+        # Never break API response due to Telegram
+        print("⚠️ Telegram notification failed:", e)
 
+    
     return FrontendResponse(
         incident_id=incident.incident_id,
         emergency_type=incident.analysis.emergency_type,
@@ -30,5 +38,6 @@ async def process_call(input_data: TranscriptInput):
         reasoning=incident.analysis.reasoning,
         confidence_score=incident.analysis.confidence_score,
         suggested_unit=incident.suggested_unit,
-        keywords=incident.analysis.keywords # <--- ADD THIS LINE
+        keywords=incident.analysis.keywords
     )
+
