@@ -1,67 +1,113 @@
 <div align="center">
 
-# 🚨 ResQ-Desk AI Backend
-
-### *When Every Second Counts, Intelligence Saves Lives*
-
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/bedrock/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.org/)
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=🚨%20ResQ-Desk%20AI&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Backend%20Intelligence%20Engine&descSize=18&descAlignY=52"/>
 
 <br/>
 
-**Transform emergency call transcripts into actionable intelligence.**  
-*Automatically analyze incidents, classify severity, and dispatch optimal response units in real-time.*
+### ⚡ *When Every Second Counts, Intelligence Saves Lives* ⚡
 
 <br/>
+
+<!-- Animated Typing -->
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FF6B6B&center=true&vCenter=true&random=false&width=600&lines=Transform+Emergency+Calls+into+Action;AI-Powered+Incident+Analysis;Real-time+Resource+Dispatch;Saving+Lives+Through+Technology" alt="Typing SVG" /></a>
+
+<br/><br/>
+
+<!-- Tech Stack Badges -->
+<p>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/AWS_Bedrock-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Bedrock"/>
+<img src="https://img.shields.io/badge/Python_3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Telegram_Bot-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
+</p>
+
+<!-- Status Badges -->
+<p>
+<img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status"/>
+<img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License"/>
+<img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome"/>
+</p>
+
+</div>
 
 ---
 
-### 🌐 Full Stack Application
+<div align="center">
 
-<table>
+## 🌐 The Complete ResQ-Desk Ecosystem
+
+</div>
+
+<table align="center">
 <tr>
-<td align="center">
+<td align="center" width="50%">
+
+### 🖥️ Frontend Dashboard
+  
 <a href="https://github.com/sanjayrohith/ResQ-Desk">
-<img src="https://img.shields.io/badge/🖥️_Frontend-ResQ--Desk-blue?style=for-the-badge" alt="Frontend Repo"/>
+<img src="https://img.shields.io/badge/→_ResQ--Desk_Frontend-4285F4?style=for-the-badge&logo=github&logoColor=white" alt="Frontend"/>
 </a>
-<br/>
-<sub><b>User Interface & Dashboard</b></sub>
+
+*Visual Command Center*  
+*Real-time Maps • Live Tracking • Dispatch Interface*
+
 </td>
-<td align="center">
-<img src="https://img.shields.io/badge/⚙️_Backend-This_Repo-green?style=for-the-badge" alt="Backend Repo"/>
-<br/>
-<sub><b>AI Engine & API Server</b></sub>
+<td align="center" width="50%">
+
+### ⚙️ Backend Engine
+  
+<img src="https://img.shields.io/badge/★_You_Are_Here-00C853?style=for-the-badge" alt="Backend"/>
+
+*AI Intelligence Core*  
+*NLP Analysis • Smart Routing • Automated Alerts*
+
 </td>
 </tr>
 </table>
 
-👉 **Check out the Frontend:** [**ResQ-Desk**](https://github.com/sanjayrohith/ResQ-Desk) — *The visual command center for emergency response*
-
 ---
 
-### 👥 Meet The Team
+<div align="center">
+
+## 👥 Meet The Builders
+
+*The minds behind the mission*
 
 <table>
 <tr>
-<td align="center">
+<td align="center" width="33%">
 <a href="https://github.com/sanjayrohith">
-<img src="https://github.com/sanjayrohith.png" width="100px;" alt="Sanjay Rohith" style="border-radius:50%"/>
-<br />
-<sub><b>Sanjay Rohith</b></sub>
+<img src="https://github.com/sanjayrohith.png" width="120px;" style="border-radius:50%; border: 3px solid #FF6B6B;"/>
+<br /><br />
+<sub><b>🚀 Sanjay Rohith</b></sub>
 </a>
-<br />
-<a href="https://github.com/sanjayrohith" title="GitHub">💻</a>
+<br /><br />
+<a href="https://github.com/sanjayrohith">
+<img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+</a>
 </td>
-<td align="center">
+<td align="center" width="33%">
 <a href="https://github.com/sanjayy0612">
-<img src="https://github.com/sanjayy0612.png" width="100px;" alt="Sanjay E" style="border-radius:50%"/>
-<br />
-<sub><b>Sanjay E</b></sub>
+<img src="https://github.com/sanjayy0612.png" width="120px;" style="border-radius:50%; border: 3px solid #4ECDC4;"/>
+<br /><br />
+<sub><b>💡 Sanjay E</b></sub>
 </a>
-<br />
-<a href="https://github.com/sanjayy0612" title="GitHub">💻</a>
+<br /><br />
+<a href="https://github.com/sanjayy0612">
+<img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://github.com/AbishekRaj2007">
+<img src="https://github.com/AbishekRaj2007.png" width="120px;" style="border-radius:50%; border: 3px solid #45B7D1;"/>
+<br /><br />
+<sub><b>⚡ Abishek Raj</b></sub>
+</a>
+<br /><br />
+<a href="https://github.com/AbishekRaj2007">
+<img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+</a>
 </td>
 </tr>
 </table>
@@ -74,198 +120,327 @@
 
 ---
 
-## 🎯 Overview
+## 🎯 What is ResQ-Desk?
 
-ResQ-Desk is a FastAPI-based backend that serves as the decision engine for emergency response systems. It leverages AWS Bedrock AI to extract structured data from natural language emergency calls and intelligently routes incidents to the nearest available response units.
+<table>
+<tr>
+<td>
 
-**Core Capabilities**
+> **ResQ-Desk** is an AI-powered emergency response orchestration system that transforms chaotic emergency calls into structured, actionable intelligence — **in seconds, not minutes.**
 
-- Natural language processing of emergency transcripts
-- Real-time incident classification (Fire, Flood, Medical)
-- Severity assessment with confidence scoring
-- Intelligent resource allocation based on unit availability and ETA
-- Automated Telegram notifications to registered volunteers
-- Demo-ready mock mode for presentations
+Imagine a 911 call comes in: *"There's smoke everywhere, I can't see, second floor of the mall!"*
+
+Our AI instantly:
+- 🔍 **Analyzes** the transcript using AWS Bedrock
+- 🏷️ **Classifies** it as a Fire emergency (Critical severity)
+- 📍 **Extracts** the location automatically
+- 🚒 **Dispatches** the nearest available fire unit
+- 📱 **Alerts** volunteers via Telegram
+
+**All within milliseconds.**
+
+</td>
+</tr>
+</table>
+
+---
+
+## ✨ Features at a Glance
+
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║   🗣️  NATURAL LANGUAGE      →    🧠  AI ANALYSIS                 ║
+║       "Help! Fire!"               Type: Fire | Severity: High    ║
+║                                                                  ║
+║   📍  SMART EXTRACTION      →    🚑  AUTO DISPATCH               ║
+║       Location detected           Nearest unit assigned          ║
+║                                                                  ║
+║   📊  CONFIDENCE SCORING    →    📱  INSTANT ALERTS              ║
+║       98% certainty               Telegram notifications         ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+| Feature | What It Does | Why It Matters |
+|:-------:|:------------|:---------------|
+| 🗣️ **NLP Processing** | Understands natural emergency language | No rigid scripts needed |
+| 🔥 **Smart Classification** | Fire, Flood, Medical detection | Right resources, right time |
+| ⚠️ **Severity Assessment** | Critical/High/Normal scoring | Prioritize what matters |
+| 🚑 **Resource Allocation** | ETA-based unit selection | Fastest response possible |
+| 📱 **Telegram Alerts** | Instant volunteer notifications | Everyone stays informed |
+| 🎭 **Demo Mode** | Zero-cost presentations | Perfect for showcases |
 
 ---
 
 
-## System Architecture
+## 🏗️ How It Works
 
-The system follows a clean, layered architecture with clear separation of concerns:
+<div align="center">
 
-```
-Emergency Transcript
-        ↓
-┌──────────────────────────────────┐
-│   API Layer (main.py)            │  ← FastAPI endpoint
-│   POST /analyze                  │
-└──────────────────────────────────┘
-        ↓
-┌──────────────────────────────────┐
-│   AI Engine (ai_engine.py)       │  ← AWS Bedrock integration
-│   • Prompt engineering           │
-│   • Response parsing             │
-│   • Mock mode support            │
-└──────────────────────────────────┘
-        ↓
-┌──────────────────────────────────┐
-│   Orchestrator (orchestrator.py) │  ← Decision logic
-│   • Emergency type mapping       │
-│   • Unit selection algorithm     │
-└──────────────────────────────────┘
-        ↓
-┌──────────────────────────────────┐
-│   Resources (resources.py)       │  ← Data access
-│   • Unit availability filtering  │
-│   • Capability matching          │
-└──────────────────────────────────┘
-        ↓
-┌──────────────────────────────────┐
-│ Telegram Notifier                │  ← Alert system
-│ (telegram_notifier.py)           │
-│   • Volunteer notifications      │
-│   • Formatted alerts             │
-└──────────────────────────────────┘
-        ↓
-    Incident Response + Volunteer Alert
+```mermaid
+graph TD
+    A[📞 Emergency Call] --> B[🎯 API Endpoint]
+    B --> C[🧠 AI Engine]
+    C --> D[📊 Orchestrator]
+    D --> E[🗄️ Resources DB]
+    E --> F[🚑 Unit Selection]
+    F --> G[📱 Telegram Alert]
+    G --> H[✅ Response Dispatched]
+    
+    style A fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+    style C fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
+    style H fill:#45b7d1,stroke:#333,stroke-width:2px,color:#fff
 ```
 
-**Component Breakdown**
+</div>
+
+### 📦 System Components
+
+```
+📞 Emergency Transcript
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────┐
+│  🎯 API LAYER                                    main.py    │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  POST /analyze  •  CORS  •  Request Validation      │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────┐
+│  🧠 AI ENGINE                                ai_engine.py   │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  AWS Bedrock  •  Prompt Engineering  •  JSON Parse  │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────┐
+│  📊 ORCHESTRATOR                          orchestrator.py   │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  Emergency Mapping  •  Unit Selection Algorithm     │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────┐
+│  🗄️ RESOURCES                               resources.py    │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  Unit Queries  •  Availability  •  Capability Match │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────┐
+│  📱 TELEGRAM NOTIFIER                telegram_notifier.py   │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  Volunteer Alerts  •  Formatted Messages  •  Async  │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+        │
+        ▼
+    ✅ Incident Response + Volunteer Alert
+```
+
+<details>
+<summary>📋 <b>Component Details</b> (Click to expand)</summary>
+
+<br/>
 
 | Component | Responsibility | Key Functions |
-|-----------|---------------|---------------|
-| `main.py` | HTTP interface | Request handling, CORS, response formatting |
-| `ai_engine.py` | AI integration | Bedrock API calls, prompt engineering, JSON parsing |
-| `orchestrator.py` | Business logic | Emergency classification, unit matching |
-| `resources.py` | Data layer | Unit queries, availability checks |
-| `schemas.py` | Data models | Pydantic validation, type safety |
-| `telegram_notifier.py` | Alert system | Volunteer notifications via Telegram Bot API |
+|:---------:|:--------------|:--------------|
+| `main.py` | 🌐 HTTP Interface | Request handling, CORS, response formatting |
+| `ai_engine.py` | 🧠 AI Integration | Bedrock API, prompt engineering, JSON parsing |
+| `orchestrator.py` | 📊 Business Logic | Emergency classification, unit matching |
+| `resources.py` | 🗄️ Data Layer | Unit queries, availability checks |
+| `schemas.py` | 📝 Data Models | Pydantic validation, type safety |
+| `telegram_notifier.py` | 📱 Alert System | Volunteer notifications via Telegram |
+
+</details>
 
 ---
 
-## Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
+<div align="center">
 
-- Python 3.10 or higher
-- AWS CLI (only for production mode with real AI)
-- pip or similar package manager
+*Get up and running in under 2 minutes!*
 
-### Installation
+</div>
+
+### 📋 Prerequisites
+
+<table>
+<tr>
+<td>✅</td>
+<td><b>Python 3.10+</b></td>
+<td>Required</td>
+</tr>
+<tr>
+<td>☁️</td>
+<td><b>AWS CLI</b></td>
+<td>Only for production mode</td>
+</tr>
+<tr>
+<td>📦</td>
+<td><b>pip</b></td>
+<td>Package manager</td>
+</tr>
+</table>
+
+### ⚡ Installation
 
 ```bash
-# Navigate to project directory
+# 1️⃣ Clone and navigate
+git clone https://github.com/sanjayrohith/resq-backend.git
 cd resq-backend
 
-# Create and activate virtual environment
+# 2️⃣ Create virtual environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install dependencies
+# 3️⃣ Install dependencies
 pip install fastapi uvicorn boto3 pydantic requests
 ```
 
-### Running Locally
+### 🏃 Launch the Server
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-The API will be available at:
-- Base URL: `http://localhost:8000`
-- Interactive docs: `http://localhost:8000/docs`
-- OpenAPI schema: `http://localhost:8000/openapi.json`
+<div align="center">
+
+### 🎉 You're Live!
+
+| Endpoint | URL |
+|:--------:|:---:|
+| 🏠 **Base URL** | `http://localhost:8000` |
+| 📖 **API Docs** | `http://localhost:8000/docs` |
+| 📋 **OpenAPI** | `http://localhost:8000/openapi.json` |
+
+</div>
 
 ---
 
-## API Documentation
+## 📚 API Reference
 
-### Endpoint: `POST /analyze`
+### `POST /analyze` — *The Magic Endpoint* ✨
 
-Processes emergency call transcripts and returns structured incident data with resource recommendations.
+<table>
+<tr>
+<td width="50%">
 
-**Request**
+**📤 Request**
 
 ```json
 {
-  "text": "There's thick black smoke coming from the second floor of Phoenix Marketcity!"
+  "text": "There's thick black smoke 
+  coming from the second floor 
+  of Phoenix Marketcity!"
 }
 ```
 
-**Response**
+</td>
+<td width="50%">
+
+**📥 Response**
 
 ```json
 {
   "incident_id": "RESQ-A3F2",
   "emergency_type": "Fire",
   "severity": "Critical",
-  "location": "Phoenix Marketcity, Velachery, Chennai",
-  "reasoning": "Caller reported thick black smoke visible from the food court area. Potential structural hazard.",
+  "location": "Phoenix Marketcity, Chennai",
+  "reasoning": "Thick black smoke...",
   "confidence_score": 0.98,
-  "suggested_unit": "Fire Engine FE12 (4 mins ETA)",
-  "keywords": ["smoke", "fire", "second_floor", "trapped"]
+  "suggested_unit": "Fire Engine FE12",
+  "keywords": ["smoke", "fire"]
 }
 ```
 
-**Response Schema**
+</td>
+</tr>
+</table>
+
+<details>
+<summary>📊 <b>Response Schema Details</b> (Click to expand)</summary>
+
+<br/>
 
 | Field | Type | Description |
-|-------|------|-------------|
-| `incident_id` | string | Unique identifier (format: RESQ-XXXX) |
-| `emergency_type` | string | Classification: Fire, Flood, Medical, etc. |
-| `severity` | string | Critical, High, or Normal |
-| `location` | string | Extracted location from transcript |
-| `reasoning` | string | AI's analysis rationale |
-| `confidence_score` | float | Model confidence (0.0 to 1.0) |
-| `suggested_unit` | string | Optimal unit with ETA |
-| `keywords` | array | Extracted key terms |
+|:------|:----:|:------------|
+| `incident_id` | `string` | Unique identifier (format: `RESQ-XXXX`) |
+| `emergency_type` | `string` | Classification: Fire, Flood, Medical |
+| `severity` | `string` | `Critical` \| `High` \| `Normal` |
+| `location` | `string` | Auto-extracted from transcript |
+| `reasoning` | `string` | AI's analysis rationale |
+| `confidence_score` | `float` | Model confidence (`0.0` to `1.0`) |
+| `suggested_unit` | `string` | Optimal unit with ETA |
+| `keywords` | `array` | Extracted key terms |
+
+</details>
 
 ---
 
-## Configuration
+## ⚙️ Configuration
 
-### Demo Mode
+<details open>
+<summary>🎭 <b>Demo Mode</b> — Perfect for Presentations</summary>
 
-For presentations and development without AWS costs:
+<br/>
 
-**File:** `app/ai_engine.py`
+> 💡 **Pro Tip:** Demo mode gives you instant, consistent responses without AWS costs!
 
+**Toggle in** `app/ai_engine.py`:
 ```python
-MOCK_MODE = True  # Toggle to False for production
+MOCK_MODE = True  # ← Set to False for production
 ```
 
-**Mock Mode Benefits:**
-- Zero AWS costs
-- Instant responses with realistic delay simulation
-- Consistent demo behavior
-- No API rate limits or failures
+| Benefit | Description |
+|:-------:|:------------|
+| 💰 | Zero AWS costs |
+| ⚡ | Instant responses with realistic delays |
+| 🎯 | Consistent demo behavior |
+| 🔒 | No API rate limits |
 
-### Production Mode
+</details>
+
+<details>
+<summary>🏭 <b>Production Mode</b> — Real AI Power</summary>
+
+<br/>
 
 **Step 1:** Configure AWS credentials
-
 ```bash
 aws configure
-# Enter your AWS Access Key ID
-# Enter your AWS Secret Access Key
-# Default region: us-east-1
+# → Enter AWS Access Key ID
+# → Enter AWS Secret Access Key  
+# → Default region: us-east-1
 ```
 
-**Step 2:** Enable Bedrock access
-
-Ensure your AWS account has access to Amazon Bedrock in `us-east-1` region with the `amazon.titan-text-express-v1` model.
+**Step 2:** Enable Bedrock access in AWS Console  
+Ensure `amazon.titan-text-express-v1` model is enabled.
 
 **Step 3:** Disable mock mode
-
 ```python
-# In app/ai_engine.py
 MOCK_MODE = False
 ```
 
-### Resource Configuration
+</details>
 
-Customize available emergency units in `data/units.json`:
+<details>
+<summary>🗂️ <b>Resource Configuration</b> — Customize Units</summary>
+
+<br/>
+
+Edit `data/units.json`:
 
 ```json
 {
@@ -277,44 +452,36 @@ Customize available emergency units in `data/units.json`:
 }
 ```
 
-**Supported Vehicle Types:**
-- `FIRE_ENGINE` - Fire and rescue operations
-- `AMBULANCE` - Medical emergencies
-- `RESCUE_BOAT` - Flood and water rescue
+**Vehicle Types:** `FIRE_ENGINE` • `AMBULANCE` • `RESCUE_BOAT`  
+**Status Values:** `AVAILABLE` • `BUSY`
 
-**Status Values:**
-- `AVAILABLE` - Ready for dispatch
-- `BUSY` - Currently on assignment
+</details>
 
-### Telegram Notifications
+<details>
+<summary>📲 <b>Telegram Notifications</b> — Alert Volunteers</summary>
 
-The system automatically sends real-time alerts to registered volunteers via Telegram when incidents are dispatched.
+<br/>
 
-**Configuration:** `app/telegram_notifier.py`
+**Setup Steps:**
+1. Create bot via [@BotFather](https://t.me/botfather)
+2. Get chat ID from [@userinfobot](https://t.me/userinfobot)
+3. Update `app/telegram_notifier.py`:
 
 ```python
-BOT_TOKEN = "your-telegram-bot-token"
-VOLUNTEER_CHAT_ID = "volunteer-chat-id"
+BOT_TOKEN = "your-bot-token"
+VOLUNTEER_CHAT_ID = "your-chat-id"
 ```
 
-**Setting Up Telegram Notifications:**
-
-1. Create a Telegram bot via [@BotFather](https://t.me/botfather)
-2. Get your bot token
-3. Get your chat ID by messaging [@userinfobot](https://t.me/userinfobot)
-4. Update `BOT_TOKEN` and `VOLUNTEER_CHAT_ID` in `telegram_notifier.py`
-
-**Alert Format:**
-
+**Sample Alert:**
 ```
 🚨 NEW EMERGENCY ALERT
 
 🔥 Type: Fire
 ⚠️ Severity: Critical
-📍 Location: Phoenix Marketcity, Velachery, Chennai
+📍 Location: Phoenix Marketcity, Chennai
 
 🧠 Reasoning:
-Caller reported thick black smoke visible from the food court area.
+Thick black smoke visible from food court.
 
 🚑 Suggested Unit:
 Fire Engine FE12 (4 mins ETA)
@@ -322,17 +489,13 @@ Fire Engine FE12 (4 mins ETA)
 — ResQ Dispatch System
 ```
 
-**Features:**
-- Non-blocking notifications (API never fails due to Telegram issues)
-- Markdown formatting for better readability
-- Includes all critical incident details
-- Instant delivery to volunteers
+</details>
 
 ---
 
-## Testing
+## 🧪 Try It Out!
 
-### cURL Example
+### 🖥️ Using cURL
 
 ```bash
 curl -X POST http://localhost:8000/analyze \
@@ -340,127 +503,229 @@ curl -X POST http://localhost:8000/analyze \
   -d '{"text": "Two elderly people trapped on second floor with rising water"}'
 ```
 
-### Interactive Testing
+### 🌐 Using Swagger UI
 
-Navigate to `http://localhost:8000/docs` for Swagger UI with:
-- Live API testing
-- Request/response examples
-- Schema documentation
-- Try-it-now functionality
+Navigate to **[localhost:8000/docs](http://localhost:8000/docs)** for:
+
+<table>
+<tr>
+<td>🧪</td><td>Live API testing</td>
+</tr>
+<tr>
+<td>📝</td><td>Request/response examples</td>
+</tr>
+<tr>
+<td>📖</td><td>Auto-generated documentation</td>
+</tr>
+<tr>
+<td>▶️</td><td>Try-it-now functionality</td>
+</tr>
+</table>
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 resq-backend/
-├── app/
-│   ├── main.py              # FastAPI application and routes
-│   ├── ai_engine.py         # AWS Bedrock integration and AI logic
-│   ├── orchestrator.py      # Decision engine and unit matching
-│   ├── resources.py         # Resource management and data access
-│   ├── schemas.py           # Pydantic models and validation
-│   └── telegram_notifier.py # Telegram bot integration for alerts
-├── data/
-│   └── units.json           # Emergency unit database
-└── README.md
+│
+├── 📂 app/
+│   ├── 🎯 main.py              # FastAPI routes & entry point
+│   ├── 🧠 ai_engine.py         # AWS Bedrock AI integration
+│   ├── 📊 orchestrator.py      # Decision engine & unit matching
+│   ├── 🗄️ resources.py         # Resource management & queries
+│   ├── 📝 schemas.py           # Pydantic models & validation
+│   └── 📱 telegram_notifier.py # Telegram bot alerts
+│
+├── 📂 data/
+│   └── 🚑 units.json           # Emergency unit database
+│
+└── 📄 README.md                # You are here! 👋
 ```
 
 ---
 
-## Technical Decisions
+## 🔧 Technical Decisions
 
-**FastAPI Framework**
-- Automatic OpenAPI documentation generation
-- Built-in request/response validation via Pydantic
-- Native async support for high concurrency
-- Type hints for improved developer experience
-
-**AWS Bedrock for AI**
-- Serverless inference (no infrastructure management)
-- Pay-per-use pricing model
-- Enterprise-grade security and compliance
-- Multiple model options (currently using Amazon Titan)
-
-**Mock Mode Architecture**
-- Enables reliable demos without external dependencies
-- Simulates realistic response times
-- Provides consistent test data
-- Reduces development costs
+<table>
+<tr>
+<td align="center" width="25%">
+<h3>⚡ FastAPI</h3>
+<sub>Framework</sub>
+</td>
+<td>
+• Auto OpenAPI docs<br/>
+• Pydantic validation<br/>
+• Async support<br/>
+• Type hints
+</td>
+</tr>
+<tr>
+<td align="center">
+<h3>🧠 AWS Bedrock</h3>
+<sub>AI Engine</sub>
+</td>
+<td>
+• Serverless inference<br/>
+• Pay-per-use<br/>
+• Enterprise security<br/>
+• Multiple models
+</td>
+</tr>
+<tr>
+<td align="center">
+<h3>🎭 Mock Mode</h3>
+<sub>Demo System</sub>
+</td>
+<td>
+• Zero dependencies<br/>
+• Realistic delays<br/>
+• Consistent data<br/>
+• Cost-free demos
+</td>
+</tr>
+</table>
 
 ---
 
-## Production Deployment
+## 🚢 Production Deployment
 
-**Pre-deployment Checklist**
+<details>
+<summary>📋 <b>Pre-deployment Checklist</b></summary>
 
 ```bash
-# Generate requirements file
+# Generate requirements
 pip freeze > requirements.txt
 
 # Security hardening
-# - Restrict CORS origins in main.py
-# - Add API authentication
-# - Enable HTTPS/TLS
+✅ Restrict CORS origins in main.py
+✅ Add API authentication
+✅ Enable HTTPS/TLS
 
 # Monitoring setup
-# - Configure CloudWatch logs
-# - Set up error alerting
-# - Add performance metrics
+✅ Configure CloudWatch logs
+✅ Set up error alerting
+✅ Add performance metrics
 
 # Configuration
-# - Set MOCK_MODE = False
-# - Use environment variables for secrets
-# - Configure production database
+✅ Set MOCK_MODE = False
+✅ Use environment variables
+✅ Configure production DB
 ```
 
-**Recommended Enhancements**
+</details>
 
-- Replace `units.json` with PostgreSQL/DynamoDB
-- Implement rate limiting (e.g., slowapi)
-- Add request logging and tracing
-- Set up CI/CD pipeline
-- Configure auto-scaling
-- Add health check endpoints
-- Support multiple Telegram channels for different emergency types
-- Implement volunteer acknowledgment system
-- Add SMS fallback for critical alerts
+<details>
+<summary>🚀 <b>Recommended Enhancements</b></summary>
+
+<br/>
+
+| Enhancement | Purpose |
+|:------------|:--------|
+| 🗃️ PostgreSQL/DynamoDB | Replace `units.json` |
+| ⏱️ Rate Limiting | Use `slowapi` |
+| 📊 Request Logging | Add tracing |
+| 🔄 CI/CD Pipeline | Automated deploys |
+| 📈 Auto-scaling | Handle load spikes |
+| ❤️ Health Checks | Uptime monitoring |
+| 📱 Multi-channel Telegram | Emergency-specific channels |
+| ✅ Volunteer ACK System | Confirm dispatches |
+| 📲 SMS Fallback | Critical alerts backup |
+
+</details>
 
 ---
 
-## Development
+## 💻 Development
 
-**Code Style**
+<details>
+<summary>🎨 <b>Code Style</b></summary>
+
 - Type hints throughout
-- Pydantic for data validation
+- Pydantic for validation
 - Clear separation of concerns
-- Minimal external dependencies
+- Minimal dependencies
 
-**Adding New Emergency Types**
+</details>
 
-1. Update `orchestrator.py` mapping logic
-2. Add corresponding vehicle types to `units.json`
-3. Update AI prompt in `ai_engine.py` if needed
+<details>
+<summary>➕ <b>Adding Emergency Types</b></summary>
 
-**Extending AI Capabilities**
+1. Update `orchestrator.py` mapping
+2. Add vehicle types to `units.json`
+3. Update AI prompt in `ai_engine.py`
 
-Modify the prompt template in `ai_engine.py`:
+</details>
 
+<details>
+<summary>🧠 <b>Extending AI</b></summary>
+
+Modify prompt in `ai_engine.py`:
 ```python
 def build_prompt(text: str) -> str:
-    return f"""Your custom prompt here..."""
+    return f"""Your custom prompt..."""
 ```
 
----
-
-## License
-
-MIT License - Free for personal and commercial use
+</details>
 
 ---
 
-## Acknowledgments
+## 📜 License
 
-Built with AWS Bedrock, FastAPI, and a focus on saving lives through intelligent automation.
+<div align="center">
 
-*Designed for emergency response systems that need speed, accuracy, and reliability.*
+**MIT License** — Free for personal and commercial use
+
+</div>
+
+---
+
+## 🙏 Acknowledgments
+
+<div align="center">
+
+*Built with cutting-edge technology for life-saving applications*
+
+<br/>
+
+<img src="https://img.shields.io/badge/Powered_by-AWS_Bedrock-FF9900?style=for-the-badge&logo=amazon-aws" alt="AWS"/>
+<img src="https://img.shields.io/badge/Built_with-FastAPI-009688?style=for-the-badge&logo=fastapi" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/Made_for-Saving_Lives-FF6B6B?style=for-the-badge" alt="Purpose"/>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+
+<br/>
+
+### 💫 If this project helps you, give it a ⭐!
+
+<br/>
+
+**Made with 💖 by the ResQ-Desk Team**
+
+<br/>
+
+<a href="https://github.com/sanjayrohith/resq-backend/issues">
+<img src="https://img.shields.io/badge/🐛_Report_Bug-FF6B6B?style=for-the-badge" alt="Bug"/>
+</a>
+<a href="https://github.com/sanjayrohith/resq-backend/issues">
+<img src="https://img.shields.io/badge/✨_Request_Feature-4ECDC4?style=for-the-badge" alt="Feature"/>
+</a>
+<a href="https://github.com/sanjayrohith/ResQ-Desk">
+<img src="https://img.shields.io/badge/🖥️_View_Frontend-45B7D1?style=for-the-badge" alt="Frontend"/>
+</a>
+
+<br/><br/>
+
+*Designed for emergency response systems that need* ***speed, accuracy, and reliability.***
+
+<br/>
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fsanjayrohith%2Fresq-backend&countColor=%23263759&style=flat-square)
+
+</div>
