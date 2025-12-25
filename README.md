@@ -1,14 +1,91 @@
-# ResQ-Connect AI Backend
+<div align="center">
 
-**Intelligent emergency response orchestration powered by AI**
+# 🚨 ResQ-Desk AI Backend
 
-Transform emergency call transcripts into actionable intelligence. Automatically analyze incidents, classify severity, and dispatch optimal response units in real-time.
+### *When Every Second Counts, Intelligence Saves Lives*
+
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/bedrock/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.org/)
+
+<br/>
+
+**Transform emergency call transcripts into actionable intelligence.**  
+*Automatically analyze incidents, classify severity, and dispatch optimal response units in real-time.*
+
+<br/>
 
 ---
 
-## Overview
+### 🌐 Full Stack Application
 
-ResQ-Connect is a FastAPI-based backend that serves as the decision engine for emergency response systems. It leverages AWS Bedrock AI to extract structured data from natural language emergency calls and intelligently routes incidents to the nearest available response units.
+<table>
+<tr>
+<td align="center">
+<a href="https://github.com/sanjayrohith/ResQ-Desk">
+<img src="https://img.shields.io/badge/🖥️_Frontend-ResQ--Desk-blue?style=for-the-badge" alt="Frontend Repo"/>
+</a>
+<br/>
+<sub><b>User Interface & Dashboard</b></sub>
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/⚙️_Backend-This_Repo-green?style=for-the-badge" alt="Backend Repo"/>
+<br/>
+<sub><b>AI Engine & API Server</b></sub>
+</td>
+</tr>
+</table>
+
+👉 **Check out the Frontend:** [**ResQ-Desk**](https://github.com/sanjayrohith/ResQ-Desk) — *The visual command center for emergency response*
+
+---
+
+### 👥 Meet The Team
+
+<table>
+<tr>
+<td align="center">
+<a href="https://github.com/sanjayrohith">
+<img src="https://github.com/sanjayrohith.png" width="100px;" alt="Sanjay Rohith" style="border-radius:50%"/>
+<br />
+<sub><b>Sanjay Rohith</b></sub>
+</a>
+<br />
+<a href="https://github.com/sanjayrohith" title="GitHub">💻</a>
+</td>
+<td align="center">
+<a href="https://github.com/sanjayy0612">
+<img src="https://github.com/sanjayy0612.png" width="100px;" alt="Sanjay E" style="border-radius:50%"/>
+<br />
+<sub><b>Sanjay E</b></sub>
+</a>
+<br />
+<a href="https://github.com/sanjayy0612" title="GitHub">💻</a>
+</td>
+<td align="center">
+<a href="https://github.com/AbishekRaj2007">
+<img src="https://github.com/AbishekRaj2007.png" width="100px;" alt="Abishek Raj" style="border-radius:50%"/>
+<br />
+<sub><b>Abishek Raj</b></sub>
+</a>
+<br />
+<a href="https://github.com/AbishekRaj2007" title="GitHub">💻</a>
+</td>
+</tr>
+</table>
+
+<br/>
+
+*Built with ❤️ for a safer world*
+
+</div>
+
+---
+
+## 🎯 Overview
+
+ResQ-Desk is a FastAPI-based backend that serves as the decision engine for emergency response systems. It leverages AWS Bedrock AI to extract structured data from natural language emergency calls and intelligently routes incidents to the nearest available response units.
 
 **Core Capabilities**
 
