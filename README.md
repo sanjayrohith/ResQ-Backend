@@ -63,15 +63,6 @@
 <br />
 <a href="https://github.com/sanjayy0612" title="GitHub">💻</a>
 </td>
-<td align="center">
-<a href="https://github.com/AbishekRaj2007">
-<img src="https://github.com/AbishekRaj2007.png" width="100px;" alt="Abishek Raj" style="border-radius:50%"/>
-<br />
-<sub><b>Abishek Raj</b></sub>
-</a>
-<br />
-<a href="https://github.com/AbishekRaj2007" title="GitHub">💻</a>
-</td>
 </tr>
 </table>
 
